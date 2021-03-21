@@ -1,4 +1,5 @@
 :root {
+  --morado-oscuro: #261e36;
   --morado: #483d68;
   --cyan: #3eead7;
   --amarillo: #fcf894;
@@ -139,6 +140,10 @@ main {
 }
 
 /* SEPARADOR */
+.separador {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
 .separador-secciones-linea-anterior {
   width: 2px;
   height: 30px;
@@ -171,7 +176,32 @@ main {
   font-weight: 400;
   text-align: center;
 }
-
+/* SOBRE MI */
+.contenedor {
+  width: 100%;
+  background: var(--morado);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 3px 6px var(--morado-oscuro);
+}
+.contenedor h2 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--magenta);
+  margin-bottom: 10px;
+}
+.contenedor ul {
+  list-style: none;
+  color: var(--blanco);
+  line-height: 2.4rem;
+}
+.contenedor ul li {
+  font-size: 1.6rem;
+  margin-left: 10px;
+}
+.contenedor ul li ul li {
+  font-size: 1.2rem;
+}
 /* PROYECTOS */
 .proyectos {
   margin-top: 20px;
@@ -209,4 +239,62 @@ main {
   font-size: 1.4rem;
   color: var(--blanco);
   font-weight: 300;
+}
+/* FORMULARIO DE CONTACTO */
+form {
+  margin-bottom: 30px;
+}
+form label {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: var(--magenta);
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+form input {
+  width: 100%;
+  height: 20px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px var(--morado-oscuro);
+}
+form textarea {
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px var(--morado-oscuro);
+}
+form input[type="submit"] {
+  background: none;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--magenta);
+  text-align: right;
+  margin-top: 10px;
+  box-shadow: none;
+}
+.contenedor h3 {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: var(--blanco);
+}
+.contenedor p {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: var(--blanco);
+  text-align: center;
+  margin-bottom: 10px;
+}
+footer {
+  background: var(--morado-oscuro);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+footer .footer-nombre {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: var(--blanco);
 }
