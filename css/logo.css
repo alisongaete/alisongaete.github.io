@@ -1,0 +1,138 @@
+:root {
+  --morado: #483d68;
+  --cyan: #3eead7;
+  --amarillo: #fcf894;
+  --magenta: #ff2a7b;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.dibujo {
+  min-width: 200px;
+  min-height: 150px;
+  width: 400px;
+  height: 300px;
+  display: flex;
+  flex-flow: column wrap;
+}
+.dibujo div {
+  border-radius: 25px;
+}
+.morado {
+  background: var(--morado);
+}
+.cyan {
+  background: var(--cyan);
+}
+
+.amarillo {
+  background: var(--amarillo);
+}
+
+.magenta {
+  background: var(--magenta);
+}
+.fila {
+  width: 100%;
+  height: 20%;
+  display: flex;
+}
+.dibujo div:not(:last-child) {
+  margin-bottom: 5%;
+}
+.primero {
+  width: 0%;
+  height: 100%;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-name: escribir-largo;
+}
+.segundo {
+  width: 0%;
+  height: 100%;
+  margin-left: 5%;
+  animation-duration: 0.5s;
+  animation-delay: 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-name: escribir-corto;
+}
+.tercero {
+  width: 0%;
+  height: 100%;
+  animation-duration: 0.5s;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-name: escribir-corto;
+}
+.cuarto {
+  width: 0%;
+  height: 100%;
+  margin-left: 5%;
+  animation-duration: 0.5s;
+  animation-delay: 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-name: escribir-largo;
+}
+.quinto {
+  width: 0%;
+  height: 100%;
+  animation-duration: 0.5s;
+  animation-delay: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-name: escribir-largo;
+}
+.sexto {
+  width: 0%;
+  height: 100%;
+  margin-left: 5%;
+  animation-duration: 0.5s;
+  animation-delay: 2.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-name: escribir-corto;
+}
+.septimo {
+  width: 0%;
+  height: 100%;
+  animation-duration: 0.5s;
+  animation-delay: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-name: escribir-corto;
+}
+.octavo {
+  width: 0%;
+  height: 100%;
+  margin-left: 5%;
+  animation-duration: 0.5s;
+  animation-delay: 3.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-name: escribir-largo;
+}
+
+@keyframes escribir-largo {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 65%;
+  }
+}
+
+@keyframes escribir-corto {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 30%;
+  }
+}
