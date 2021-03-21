@@ -73,6 +73,24 @@ main {
   padding: 50px 24px;
   min-height: 200px;
 }
+/*  CALL TO ACTION */
+.call-to-action {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 20px;
+}
+.call-to-action .separador-enlace {
+  background: var(--blanco);
+  width: 50%;
+  height: 2px;
+  margin: 5px 0;
+}
+.call-to-action a {
+  font-size: 1.4rem;
+  color: var(--magenta);
+}
 
 /* SECCIÓN PRINCIPAL */
 .principal {
@@ -80,10 +98,11 @@ main {
   flex-flow: row wrap;
   border-left: 2px solid var(--magenta);
   padding: 10px;
+  margin-bottom: 30px;
 }
 /* SECCIÓN PRINCIPAL - PRESENTACIÓN*/
 .principal .presentacion {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .principal .presentacion p {
   font-size: 3.2rem;
@@ -107,16 +126,6 @@ main {
 /* SECCIÓN PRINCIPAL - CV*/
 .descargar-cv {
   width: 60%;
-}
-.descargar-cv .separador-enlace {
-  background: var(--blanco);
-  width: 40%;
-  height: 2px;
-  margin: 5px 0;
-}
-.descargar-cv a {
-  font-size: 1.4rem;
-  color: var(--magenta);
 }
 /* SECCIÓN PRINCIPAL - REDES SOCIALES*/
 .redes-sociales {
@@ -156,9 +165,48 @@ main {
   left: calc(50% - 3px);
 }
 .separador h3 {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   line-height: 2.4rem;
   color: var(--magenta);
   font-weight: 400;
   text-align: center;
+}
+
+/* PROYECTOS */
+.proyectos {
+  margin-top: 20px;
+  column-count: 2;
+  column-gap: 3px;
+}
+.proyecto {
+  break-inside: avoid;
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(72, 61, 104, 0.8);
+  padding: 20px;
+  opacity: 0%;
+  transition: 0.5s;
+}
+.proyecto:hover .overlay {
+  opacity: 100%;
+}
+.proyecto img {
+  width: 100%;
+  height: 100%;
+}
+.proyecto h2 {
+  font-size: 1.8rem;
+  color: var(--magenta);
+  font-weight: 400;
+}
+.proyecto p {
+  font-size: 1.4rem;
+  color: var(--blanco);
+  font-weight: 300;
 }
