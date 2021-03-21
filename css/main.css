@@ -29,11 +29,12 @@ nav {
   flex-flow: column wrap;
   width: 100%;
   padding: 10px 24px;
+  margin-bottom: 20px;
 }
 nav .logo {
   width: 100%;
+  margin-top: 20px;
   text-align: center;
-  margin-bottom: 20px;
 }
 nav .logo a {
   font-size: 2.8rem;
@@ -47,6 +48,7 @@ nav .logo a span.apellido {
   color: var(--blanco);
 }
 nav .navbar {
+  margin-top: 20px;
   width: 100%;
   text-align: center;
 }
@@ -97,6 +99,7 @@ main {
 .principal {
   display: flex;
   flex-flow: row wrap;
+  justify-content: start;
   border-left: 2px solid var(--magenta);
   padding: 10px;
   margin-bottom: 30px;
@@ -181,12 +184,13 @@ main {
   width: 100%;
   background: var(--morado);
   border-radius: 15px;
-  padding: 20px;
+  padding: 50px 20px;
   box-shadow: 0 3px 6px var(--morado-oscuro);
 }
 .contenedor h2 {
   font-size: 1.8rem;
   font-weight: 400;
+  text-align: center;
   color: var(--magenta);
   margin-bottom: 10px;
 }
@@ -201,6 +205,9 @@ main {
 }
 .contenedor ul li ul li {
   font-size: 1.2rem;
+}
+.icono-codigo-navegador {
+  display: none;
 }
 /* PROYECTOS */
 .proyectos {
@@ -243,6 +250,7 @@ main {
 /* FORMULARIO DE CONTACTO */
 form {
   margin-bottom: 30px;
+  margin: 0 auto;
 }
 form label {
   font-size: 1.6rem;
@@ -286,15 +294,23 @@ form input[type="submit"] {
   text-align: center;
   margin-bottom: 10px;
 }
+.contenedor p a {
+  color: var(--blanco);
+}
 footer {
   background: var(--morado-oscuro);
   padding: 20px;
+}
+.footer {
   display: flex;
   justify-content: space-between;
-  align-content: center;
+  align-items: flex-end;
 }
-footer .footer-nombre {
+.footer .footer-nombre {
   font-size: 1.4rem;
   font-weight: 300;
   color: var(--blanco);
+}
+.dibujo {
+  display: none;
 }
