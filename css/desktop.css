@@ -149,7 +149,9 @@ nav .navbar {
 .principal .presentacion h2 {
   font-size: 4.2rem;
 }
-
+.proyectos {
+  column-count: 3;
+}
 @keyframes escribir-largo {
   from {
     width: 0%;

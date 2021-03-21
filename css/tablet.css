@@ -116,7 +116,9 @@
   animation-fill-mode: forwards;
   animation-name: escribir-largo;
 }
-
+.proyectos {
+  column-count: 2;
+}
 @keyframes escribir-largo {
   from {
     width: 0%;
@@ -151,6 +153,9 @@
   .principal .presentacion h2 {
     font-size: 2.8rem;
   }
+  .proyectos {
+    column-count: 2;
+  }
 }
 @media (min-width: 581px) {
   .dibujo {
@@ -182,7 +187,7 @@
     width: 35%;
   }
   .proyectos {
-    column-count: 3;
+    column-count: 2;
   }
   form {
     max-width: 400px;
