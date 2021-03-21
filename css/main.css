@@ -275,7 +275,7 @@ form textarea {
   border-radius: 5px;
   box-shadow: 0 3px 6px var(--morado-oscuro);
 }
-form button[type="submit"] {
+button {
   background: none;
   border: none;
   font-size: 1.8rem;
